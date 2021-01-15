@@ -14,8 +14,9 @@ html {
   // *for starting phase only
   height: 100vh;
   display: grid;
-
-  align-items: start;
-  grid-template-columns: minmax(5rem, 10rem) repeat(2, 1fr) minmax(5rem, 10rem);
-  grid-template-rows: min-content 90vh;
+  grid-template-rows: min-content 70vh;
+}
+.feature__icon {
+  color: black;
+  fill: red;
 }

@@ -11,14 +11,24 @@ html {
 .container {
   height: 100vh;
   display: grid;
-  align-items: start;
-  grid-template-columns: minmax(5rem, 10rem) repeat(2, 1fr) minmax(5rem, 10rem);
-  grid-template-rows: min-content 90vh; }
+  grid-template-rows: min-content 70vh; }
+
+.feature__icon {
+  color: black;
+  fill: red; }
+
+.feature {
+  background-color: #cc18cc; }
+
+.services {
+  background-color: aqua; }
+
+.testimonials {
+  background-color: #44bb34; }
 
 .header {
   background-color: rebeccapurple;
   grid-column: 1 / -1; }
 
 .navigation {
-  background-color: tomato;
-  grid-column: 2 / 4; }
+  background-color: #ff6347; }
