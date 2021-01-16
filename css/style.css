@@ -8,15 +8,6 @@ html {
   font-size: 62.5%;
   box-sizing: border-box; }
 
-.container {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: min-content 70vh; }
-
-.feature__icon {
-  color: black;
-  fill: red; }
-
 .feature {
   background-color: #cc18cc; }
 
@@ -28,7 +19,7 @@ html {
 
 .header {
   background-color: rebeccapurple;
-  grid-column: 1 / -1; }
+  height: 70vh; }
 
 .navigation {
   background-color: #ff6347; }

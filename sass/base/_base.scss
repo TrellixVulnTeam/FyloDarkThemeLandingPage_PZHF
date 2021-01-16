@@ -9,14 +9,3 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-
-.container {
-  // *for starting phase only
-  height: 100vh;
-  display: grid;
-  grid-template-rows: min-content 70vh;
-}
-.feature__icon {
-  color: black;
-  fill: red;
-}
