@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -32,17 +36,19 @@
     <!--?========== Navigation ==========-->
     <nav class="navigation">
       <div class="navigation__logo-box">
-        <img src="" alt="" class="navigation__img" />
+        <svg class="navigation__icon">
+          <use xlink:href="images/sprite.svg#logo"></use>
+        </svg>
       </div>
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="" class="navigation__item--link"> Features </a>
+          <a href="#0" class="navigation__item--link"> Features </a>
         </li>
         <li class="navigation__item">
-          <a href="" class="navigation__item--link"> Team </a>
+          <a href="#0" class="navigation__item--link"> Team </a>
         </li>
         <li class="navigation__item">
-          <a href="" class="navigation__item--link"> Sign In </a>
+          <a href="#0" class="navigation__item--link"> Sign In </a>
         </li>
       </ul>
     </nav>
@@ -54,12 +60,12 @@
         </span>
         <span class="heading-1--sub">accessible anywhere.</span>
       </h1>
-      <p class="paragraph">
+      <p class="header-text mt-md">
         Fylo stores all your most important files in one secure location. Access
         them wherever you need, share and collaborate with friends family, and
         co-workers.
       </p>
-      <a href="#0" class="btn btn--header">Get Started</a>
+      <a href="#0" class="btn btn--header mt-sm">Get Started</a>
     </header>
     <main>
       <!--?========== Services ==========-->
@@ -127,9 +133,11 @@
           </p>
           <a href="#0" class="feature__link">
             See how Fylo works
-            <svg class="feature__icon">
-              <use xlink:href="#"></use>
-            </svg>
+            <span>
+              <svg class="feature__icon">
+                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </span>
           </a>
         </div>
       </section>
@@ -189,7 +197,7 @@
           <form class="form">
             <label for="email"></label>
             <input type="email" name="email" id="email" class="form__email" />
-            <button class="btn form__btn">Get Started For Free</button>
+            <a class="btn form__btn" href="#0">Get Started For Free</a>
           </form>
         </div>
       </section>

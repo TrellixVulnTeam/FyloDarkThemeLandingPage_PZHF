@@ -1,4 +1,13 @@
 .header {
-  background-color: rebeccapurple;
-  height: 70vh;
+  padding-bottom: 5rem;
+  height: 100vh;
+  background: url("../../images/illustration-intro.png"),
+    url("../../images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top center, bottom;
+  background-size: auto, contain;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  place-content: end center;
 }

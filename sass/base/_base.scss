@@ -3,9 +3,14 @@
 *::before {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+}
+
+.container {
+  background-color: $dark-blue-intro;
 }

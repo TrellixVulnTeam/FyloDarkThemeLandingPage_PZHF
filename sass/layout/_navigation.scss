@@ -1,3 +1,39 @@
 .navigation {
-  background-color: #ff6347;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+
+  &__logo-box {
+  }
+
+  &__icon {
+    width: 13rem;
+    height: 5rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    @supports not (gap: 3rem) {
+      & {
+        margin-left: 3rem;
+      }
+    }
+  }
+
+  &__item {
+    &--link {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: $white;
+      transition: color 0.3s;
+
+      &:hover {
+        color: rgba($white, 0.8);
+      }
+    }
+  }
 }

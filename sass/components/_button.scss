@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  padding: 1.5rem 7rem;
+  border-radius: 5rem;
+  text-decoration: none;
+  color: $white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, $cyan-cta, $blue-cta);
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.91;
+  }
+}
