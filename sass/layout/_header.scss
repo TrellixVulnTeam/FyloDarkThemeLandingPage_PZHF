@@ -10,4 +10,10 @@
   display: grid;
   place-items: center;
   place-content: end center;
+
+  &-text {
+    font-size: 1.8rem;
+    color: $white;
+    width: 50%;
+  }
 }
