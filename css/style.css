@@ -36,7 +36,11 @@ html {
     display: block; }
 
 .heading-3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-weight: 700; }
+
+.heading-4 {
+  font-size: 1.7rem;
   font-weight: 700; }
 
 .paragraph {
@@ -52,8 +56,11 @@ html {
   margin-top: 3.5rem; }
 
 .btn {
+  cursor: pointer;
+  background: none;
+  border: none;
   display: inline-block;
-  padding: 1.5rem 7rem;
+  padding: 1.5rem 3rem;
   border-radius: 5rem;
   text-decoration: none;
   color: white;
@@ -63,6 +70,30 @@ html {
   transition: opacity 0.3s; }
   .btn:hover {
     opacity: 0.91; }
+
+.cta {
+  padding: 10rem 0 0 0;
+  display: grid;
+  place-items: center; }
+  .cta__container {
+    border-radius: 5px;
+    text-align: center;
+    max-width: 70rem;
+    padding: 5rem;
+    width: 100%;
+    background-color: #1c2431; }
+  .cta__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    .cta__form--email {
+      width: 50%;
+      padding: 1rem 3rem;
+      border-radius: 5rem;
+      border: none; }
+      .cta__form--email:focus {
+        outline: none; }
 
 .feature {
   padding: 10rem 0;
@@ -77,13 +108,35 @@ html {
   .feature--text {
     font-size: 1.8rem; }
   .feature__link {
-    display: inline-block;
     text-decoration: none;
-    color: white; }
+    padding-bottom: 0.5rem;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    position: relative; }
+    .feature__link::before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 18rem;
+      height: 0.1rem;
+      background-color: white; }
+    .feature__link span {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @supports not (gap: 3rem) {
+        .feature__link span {
+          margin-left: 1rem; } }
   .feature__icon {
     width: 2rem;
     height: 2rem;
-    fill: white; }
+    fill: #339ecc; }
 
 .services {
   padding: 0 0 10rem 0;
@@ -108,7 +161,36 @@ html {
     height: 8rem; }
 
 .testimonials {
-  background-color: #44bb34; }
+  padding: 10rem 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(35rem, 1fr));
+  gap: 5rem; }
+  .testimonials--img {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    z-index: 1; }
+  .testimonials__container {
+    padding: 3rem;
+    background-color: #202a3c;
+    border-radius: 5px; }
+  .testimonials__person {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    grid-column-gap: 2rem; }
+    .testimonials__person--item {
+      width: 3rem;
+      height: 3rem;
+      grid-row: 1 / 3; }
+    .testimonials__person--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%; }
+    .testimonials__person-info {
+      grid-column: 2 / 3; }
 
 .header {
   padding-bottom: 5rem;

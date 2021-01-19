@@ -22,14 +22,43 @@
   }
 
   &__link {
-    display: inline-block;
     text-decoration: none;
+    padding-bottom: 0.5rem;
     color: $white;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 18rem;
+      height: 0.1rem;
+      background-color: $white;
+    }
+
+    span {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @supports not (gap: 3rem) {
+        & {
+          margin-left: 1rem;
+        }
+      }
+    }
   }
 
   &__icon {
     width: 2rem;
     height: 2rem;
-    fill: $white;
+    fill: $blue-cta;
   }
 }

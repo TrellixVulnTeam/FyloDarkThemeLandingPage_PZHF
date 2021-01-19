@@ -1,0 +1,33 @@
+.cta {
+  padding: 10rem 0 0 0;
+  display: grid;
+  place-items: center;
+
+  &__container {
+    border-radius: 5px;
+    text-align: center;
+    max-width: 70rem;
+    padding: 5rem;
+    width: 100%;
+    background-color: $dark-blue-intro;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    // flex-flow: wrap column;
+
+    &--email {
+      width: 50%;
+      padding: 1rem 3rem;
+      border-radius: 5rem;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
