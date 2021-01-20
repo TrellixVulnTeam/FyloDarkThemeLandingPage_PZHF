@@ -1,15 +1,20 @@
 .header {
+  position: relative;
   padding-bottom: 5rem;
-  // height: 100vh;
-  background: url("../../images/illustration-intro.png"),
-    url("../../images/bg-curvy-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: top center, bottom;
-  background-size: auto, contain;
+  height: 100vh;
+  background: url("../../images/bg-curvy-desktop.svg") no-repeat bottom center;
+  background-size: contain;
   text-align: center;
   display: grid;
   place-items: center;
   place-content: end center;
+
+  &__img {
+    position: absolute;
+    max-width: 50rem;
+    width: 100%;
+    top: 0;
+  }
 
   &-text {
     font-size: 1.8rem;

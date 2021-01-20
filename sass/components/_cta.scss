@@ -1,12 +1,12 @@
 .cta {
   position: relative;
-  padding: 10rem 0 0 0;
+  padding: 10rem 0;
   display: grid;
   place-items: center;
 
   &__container {
     position: absolute;
-    top: 50%;
+    top: 10rem;
     border-radius: 5px;
     text-align: center;
     max-width: 70rem;

@@ -1,12 +1,13 @@
 .footer {
   background-color: $dark-blue-footer;
-  padding: 15rem 10rem 10rem;
+  padding: 20rem 10rem 10rem;
   display: grid;
-  grid-template-columns: 2fr repeat(4, 1fr);
-  grid-column-gap: 5rem;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 5rem;
 
   &__description {
     &--icon {
+      grid-column: 1 / -1;
     }
   }
 
@@ -25,6 +26,85 @@
       & {
         margin-right: 2rem;
       }
+    }
+  }
+
+  &__contact {
+    &--link {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &--icon {
+      width: 2rem;
+      height: 2rem;
+      fill: currentColor;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+
+    &--list {
+      padding-bottom: 1.5rem;
+    }
+
+    &--link {
+      text-decoration: none;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 2rem;
+
+    &--link {
+      text-decoration: none;
+    }
+
+    &--icon {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: $white;
+      transition: fill 0.3s;
+    }
+
+    span {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0.2rem $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: box-shadow 0.3s;
+
+      &:hover {
+        box-shadow: 0 0 0 0.2rem $cyan-cta;
+      }
+
+      @supports not (gap: 3rem) {
+        & {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  &__social--link:hover &__social--icon {
+    fill: $cyan-cta;
+  }
+
+  &__nav--link,
+  &__contact--link {
+    color: $white;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $cyan-cta;
     }
   }
 }

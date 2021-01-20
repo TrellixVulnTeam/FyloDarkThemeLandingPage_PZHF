@@ -24,7 +24,7 @@ html {
 
 .heading-1 {
   font-weight: 700;
-  font-size: calc(1.6rem + 1.8vw); }
+  font-size: calc(1.6rem + 1.7vw); }
   .heading-1--main, .heading-1--sub {
     display: block; }
 
@@ -60,7 +60,7 @@ html {
   background: none;
   border: none;
   display: inline-block;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 5rem;
   border-radius: 5rem;
   text-decoration: none;
   color: white;
@@ -75,12 +75,12 @@ html {
 
 .cta {
   position: relative;
-  padding: 10rem 0 0 0;
+  padding: 10rem 0;
   display: grid;
   place-items: center; }
   .cta__container {
     position: absolute;
-    top: 50%;
+    top: 10rem;
     border-radius: 5px;
     text-align: center;
     max-width: 70rem;
@@ -113,12 +113,15 @@ html {
   .feature--text {
     font-size: 1.8rem; }
   .feature__link {
+    position: relative;
     text-decoration: none;
     padding-bottom: 0.5rem;
     color: white;
     display: flex;
     gap: 1rem;
-    position: relative; }
+    transition: color 0.3s; }
+    .feature__link:hover {
+      color: #339ecc; }
     .feature__link::before {
       position: absolute;
       left: 0;
@@ -134,10 +137,13 @@ html {
       background-color: white;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      transition: background-color 0.3s; }
       @supports not (gap: 3rem) {
         .feature__link span {
           margin-left: 1rem; } }
+  .feature__link:hover span {
+    background-color: #339ecc; }
   .feature__icon {
     width: 2rem;
     height: 2rem;
@@ -199,10 +205,12 @@ html {
 
 .footer {
   background-color: #0b1523;
-  padding: 15rem 10rem 10rem;
+  padding: 20rem 10rem 10rem;
   display: grid;
-  grid-template-columns: 2fr repeat(4, 1fr);
-  grid-column-gap: 5rem; }
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 5rem; }
+  .footer__description--icon {
+    grid-column: 1 / -1; }
   .footer--text {
     display: flex;
     align-items: flex-start;
@@ -214,17 +222,69 @@ html {
     @supports not (gap: 3rem) {
       .footer__icon {
         margin-right: 2rem; } }
+  .footer__contact--link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem; }
+  .footer__contact--icon {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor; }
+  .footer__nav {
+    display: flex;
+    justify-content: space-around; }
+    .footer__nav--list {
+      padding-bottom: 1.5rem; }
+    .footer__nav--link {
+      text-decoration: none; }
+  .footer__social {
+    display: flex;
+    gap: 2rem; }
+    .footer__social--link {
+      text-decoration: none; }
+    .footer__social--icon {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: white;
+      transition: fill 0.3s; }
+    .footer__social span {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0.2rem white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: box-shadow 0.3s; }
+      .footer__social span:hover {
+        box-shadow: 0 0 0 0.2rem #65e2d9; }
+      @supports not (gap: 3rem) {
+        .footer__social span {
+          margin-right: 2rem; } }
+  .footer__social--link:hover .footer__social--icon {
+    fill: #65e2d9; }
+  .footer__nav--link, .footer__contact--link {
+    color: white;
+    transition: color 0.3s; }
+    .footer__nav--link:hover, .footer__contact--link:hover {
+      color: #65e2d9; }
 
 .header {
+  position: relative;
   padding-bottom: 5rem;
-  background: url("../../images/illustration-intro.png"), url("../../images/bg-curvy-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: top center, bottom;
-  background-size: auto, contain;
+  height: 100vh;
+  background: url("../../images/bg-curvy-desktop.svg") no-repeat bottom center;
+  background-size: contain;
   text-align: center;
   display: grid;
   place-items: center;
   place-content: end center; }
+  .header__img {
+    position: absolute;
+    max-width: 50rem;
+    width: 100%;
+    top: 0; }
   .header-text {
     font-size: 1.8rem;
     color: white;
@@ -254,12 +314,13 @@ html {
       color: rgba(255, 255, 255, 0.8); }
 
 main {
+  padding: 10rem;
   background-color: #181f2a; }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  grid-area: 2 / 1 / 3 /-1; }
+  grid-area: 3 / 1 / 4 /-1; }
 
 .attribution a {
   color: white;
