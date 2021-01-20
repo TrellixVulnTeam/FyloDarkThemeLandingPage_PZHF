@@ -15,4 +15,8 @@
   &:hover {
     opacity: 0.91;
   }
+
+  &:focus {
+    outline: none;
+  }
 }

@@ -15,22 +15,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
-
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body class="container">
     <!--?========== Navigation ==========-->
@@ -223,20 +211,25 @@
               id="email"
               class="cta__form--email"
             />
-            <button class="btn">Get Started For Free</button>
+            <button class="btn btn-cta">Get Started For Free</button>
           </form>
         </div>
       </section>
     </main>
     <!--?========== Footer ==========-->
-    <footer>
-      <svg class="navigation__icon">
-        <use xlink:href="images/sprite.svg#logo"></use>
-      </svg>
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua
-      </p>
+    <footer class="footer">
+      <div class="footer_description">
+        <svg class="navigation__icon footer__description--icon">
+          <use xlink:href="images/sprite.svg#logo"></use>
+        </svg>
+        <p class="paragraph footer--text mt-md">
+          <svg class="footer__icon">
+            <use xlink:href="images/sprite.svg#icon-location"></use>
+          </svg>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+      </div>
       <div class="footer__contact">
         <a href="" class="footer__contact--link">
           <svg class="footer__icon">
@@ -304,5 +297,12 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script>
+      document
+        .querySelector(".btn-cta")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+        });
+    </script>
   </body>
 </html>
