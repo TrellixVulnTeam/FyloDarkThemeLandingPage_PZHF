@@ -234,6 +234,7 @@ html {
   .footer__information {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
     gap: 5rem; }
   .footer--text {
     display: flex;
@@ -277,7 +278,8 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: box-shadow 0.3s; }
+      transition: box-shadow 0.3s;
+      cursor: pointer; }
       .footer__social span:hover {
         box-shadow: 0 0 0 0.2rem #65e2d9; }
       @supports not (gap: 3rem) {
