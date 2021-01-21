@@ -2,8 +2,11 @@
   position: relative;
   padding-bottom: 5rem;
   height: 100vh;
-  background: url("../../images/bg-curvy-desktop.svg") no-repeat bottom center;
-  background-size: contain;
+  background: url("../../images/illustration-intro.png"),
+    url("../../images/bg-curvy-desktop.svg");
+  background-size: 60rem auto, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom;
   text-align: center;
   display: grid;
   place-items: center;
@@ -13,16 +16,17 @@
     height: 80vh;
   }
 
-  &__img {
-    position: absolute;
-    max-width: 50rem;
-    width: 100%;
-    top: 0;
+  @media screen and (max-width: 30em) {
+    background-size: 40rem auto, contain;
   }
 
   &-text {
     font-size: 1.8rem;
     color: $white;
     width: 50%;
+
+    @media screen and (max-width: 45em) {
+      width: 70%;
+    }
   }
 }

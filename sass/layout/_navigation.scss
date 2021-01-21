@@ -4,12 +4,14 @@
   align-items: center;
   padding: 2rem 5rem;
 
-  &__logo-box {
-  }
-
   &__icon {
     width: 13rem;
     height: 5rem;
+
+    @media screen and (max-width: 34em) {
+      width: 8rem;
+      height: 5rem;
+    }
   }
 
   &__list {

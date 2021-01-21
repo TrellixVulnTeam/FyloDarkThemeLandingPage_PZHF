@@ -4,6 +4,10 @@
   display: grid;
   place-items: center;
 
+  @media screen and (max-width: 47.4375em) {
+    padding: 5rem 0 0 0;
+  }
+
   &__container {
     position: absolute;
     top: 15rem;
@@ -13,6 +17,11 @@
     padding: 5rem;
     width: 100%;
     background-color: $dark-blue-intro;
+
+    @media screen and (max-width: 47.4375em) {
+      position: static;
+      max-width: 50rem;
+    }
   }
 
   &__form {
@@ -20,13 +29,20 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    // flex-flow: wrap column;
+
+    @media screen and (max-width: 48em) {
+      flex-flow: wrap column;
+    }
 
     &--email {
       width: 50%;
       padding: 1rem 3rem;
       border-radius: 5rem;
       border: none;
+
+      @media screen and (max-width: 47.4375em) {
+        width: 70%;
+      }
 
       &:focus {
         outline: none;

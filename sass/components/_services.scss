@@ -1,11 +1,12 @@
 .services {
   padding: 0 0 10rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   justify-content: center;
   gap: 7rem;
 
-  &__container {
+  @media screen and (max-width: 47.4375em) {
+    padding: 0 0 5rem 0;
   }
 
   &__icon {
