@@ -1,14 +1,11 @@
 .footer {
   background-color: $dark-blue-footer;
   padding: 20rem 10rem 10rem;
-  display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr);
-  gap: 5rem;
 
-  &__description {
-    &--icon {
-      grid-column: 1 / -1;
-    }
+  &__information {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 5rem;
   }
 
   &--text {
@@ -45,9 +42,6 @@
   }
 
   &__nav {
-    display: flex;
-    justify-content: space-around;
-
     &--list {
       padding-bottom: 1.5rem;
     }

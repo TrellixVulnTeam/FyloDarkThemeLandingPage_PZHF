@@ -1,33 +1,11 @@
 .services {
   padding: 0 0 10rem 0;
   display: grid;
-  grid-template-columns: 1fr repeat(2, minmax(35rem, 1fr)) 1fr;
-  grid-column-gap: 10rem;
-  grid-row-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: center;
+  gap: 7rem;
 
   &__container {
-    text-align: center;
-
-    &-1 {
-      grid-column: 2 / 3;
-    }
-
-    &-2 {
-      grid-column: 3 / 4;
-    }
-
-    &-3,
-    &-4 {
-      grid-row: 2 / 3;
-    }
-
-    &-3 {
-      grid-column: 2 / 3;
-    }
-
-    &-4 {
-      grid-column: 3 / 4;
-    }
   }
 
   &__icon {

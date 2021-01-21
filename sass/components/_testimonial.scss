@@ -1,29 +1,34 @@
 .testimonials {
   padding: 10rem 0;
-  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  justify-content: center;
   gap: 5rem;
 
   &--img {
     position: absolute;
-    top: 6rem;
-    left: 0;
-    z-index: 1;
+    top: -2rem;
+    left: 1rem;
+
+    @media screen and (max-width: 47.4375em) {
+      top: -3rem;
+    }
   }
 
   &__container {
+    position: relative;
     padding: 3rem;
     background-color: $dark-blue-testimonial;
     border-radius: 5px;
 
-    &-1 {
-    }
-
-    &-2 {
-    }
-
     &-3 {
+      @media screen and (max-width: 67.4375em) {
+        transform: translateX(50%);
+      }
+
+      @media screen and (max-width: 47.4375em) {
+        transform: translateX(0);
+      }
     }
   }
 
