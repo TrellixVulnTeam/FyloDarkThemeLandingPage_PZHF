@@ -175,7 +175,8 @@ html {
   text-align: center; }
   @media screen and (max-width: 47.4375em) {
     .services {
-      padding: 0 0 5rem 0; } }
+      padding: 0 0 5rem 0;
+      gap: 5rem; } }
   .services__icon {
     width: 8rem;
     height: 8rem; }
@@ -227,6 +228,9 @@ html {
 .footer {
   background-color: #0b1523;
   padding: 20rem 10rem 10rem; }
+  @media screen and (max-width: 47.4375em) {
+    .footer {
+      padding: 5rem; } }
   .footer__information {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -312,6 +316,9 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 5rem; }
+  @media screen and (max-width: 34em) {
+    .navigation {
+      padding: 2rem; } }
   .navigation__icon {
     width: 13rem;
     height: 5rem; }
@@ -342,9 +349,8 @@ main {
       padding: 5rem; } }
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
-  grid-area: 3 / 1 / 4 /-1; }
+  font-size: 1.5rem;
+  text-align: center; }
 
 .attribution a {
   color: white;

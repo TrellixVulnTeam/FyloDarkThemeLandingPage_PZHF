@@ -4,6 +4,10 @@
   align-items: center;
   padding: 2rem 5rem;
 
+  @media screen and (max-width: 34em) {
+    padding: 2rem;
+  }
+
   &__icon {
     width: 13rem;
     height: 5rem;

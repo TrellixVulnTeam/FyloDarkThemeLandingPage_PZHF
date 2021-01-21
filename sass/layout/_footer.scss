@@ -2,6 +2,10 @@
   background-color: $dark-blue-footer;
   padding: 20rem 10rem 10rem;
 
+  @media screen and (max-width: 47.4375em) {
+    padding: 5rem;
+  }
+
   &__information {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
